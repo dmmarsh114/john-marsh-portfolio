@@ -1,0 +1,28 @@
+.footer {
+    height: 8vh;
+    background-color: rgb(23,162,184);
+}
+
+.footer ol {
+    width: 100%;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    
+    margin-bottom: 0;
+    padding-top: 2vh;
+    
+    list-style-type: none;
+    text-align: center;
+    color: white;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: black;
+}
