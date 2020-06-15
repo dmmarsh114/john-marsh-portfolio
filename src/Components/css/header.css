@@ -15,3 +15,11 @@
 
     text-align: right;
 }
+
+.header-text .btn-group-vertical {
+    align-items: flex-end !important;
+}
+
+.header-text Button {
+    margin: 5px 0 5px 0;
+}

@@ -25,7 +25,7 @@ const BitsyStories = () => {
     }
 
     return (
-        <div className='bitsyStories'>
+        <div className='bitsyStories' id='BitsyStories'>
             <h2>The Stories</h2>
 
             <CardColumns className='bitsy-collections-container'>

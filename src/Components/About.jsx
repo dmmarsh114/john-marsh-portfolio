@@ -6,7 +6,7 @@ import authorPlaceholder from '../Assets/authorPlaceholder.jpg';
 const About = (props) => {
 
     return (
-        <div className='about'>
+        <div className='about' id='AboutTheAuthor'>
             <h2>About the Author</h2>
             <img src={authorPlaceholder} alt="author" />
             <p>
