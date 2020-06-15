@@ -3,12 +3,26 @@ import './css/bitsy.css';
 
 import {
     Card, CardColumns, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button, Row, Col, Container
+    CardTitle, CardSubtitle, Button, Row, Col, Container,
+    Modal, ModalHeader, ModalBody, ModalFooter
 } from 'reactstrap';
 
 import collectionPic from '../Assets/collectionPlaceholder.jpg';
 
 const BitsyStories = () => {
+
+    const collection1Sample = 'Collection 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in eveniet itaque eaque tenetur ipsa enim similique vel, distinctio laborum architecto nam velit voluptate vero unde quas, blanditiis dignissimos neque!';
+    const collection2Sample = 'Collection 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in eveniet itaque eaque tenetur ipsa enim similique vel, distinctio laborum architecto nam velit voluptate vero unde quas, blanditiis dignissimos neque!';
+
+    const [sampleText, setSampleText] = React.useState('');
+    const [sampleModal, setSampleModal] = React.useState(false);
+
+    const toggle = () => setSampleModal(!sampleModal);
+
+    const openSampleModal = (text) => {
+        setSampleText(text);
+        toggle();
+    }
 
     return (
         <div className='bitsyStories'>
@@ -33,7 +47,7 @@ const BitsyStories = () => {
                                 <CardText>
                                     With stories such as: <i>Lorem ipsum dolor, sit amet</i>, <i>consectetur adipisicing elit</i>, <i>Commodi voluptatem</i>
                                 </CardText>
-                                <Button color='info'>Read A Sample</Button>
+                                <Button color='info' onClick={() => openSampleModal(collection1Sample)}>Read A Sample</Button>
                                 <Button color='info'>Buy Now!</Button>
                             </CardBody>
                         </Col>
@@ -55,7 +69,7 @@ const BitsyStories = () => {
                                     With stories such as: <i>Lorem ipsum dolor, sit amet</i>, <i>consectetur adipisicing elit</i>, <i>Commodi voluptatem</i>
                                 </CardText>
                                 <Button color='info'>Buy Now!</Button>
-                                <Button color='info'>Read A Sample</Button>
+                                <Button color='info' onClick={() => openSampleModal(collection2Sample)}>Read A Sample</Button>
                             </CardBody>
                         </Col>
                         <Col className='pic-container'>
@@ -65,6 +79,15 @@ const BitsyStories = () => {
                 </Card>
 
             </CardColumns>
+
+            <Modal isOpen={sampleModal} toggle={toggle}>
+                <ModalHeader toggle={toggle}>Sample Modal</ModalHeader>
+                <ModalBody>{sampleText}</ModalBody>
+                <ModalFooter>
+                    <Button color='danger' onClick={toggle}>Close</Button>
+                    <Button color='info'>Buy Here!</Button>
+                </ModalFooter>
+            </Modal>
         </div >
     )
 }
