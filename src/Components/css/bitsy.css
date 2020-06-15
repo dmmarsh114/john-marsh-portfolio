@@ -29,3 +29,7 @@
 .bitsy-collection Button {
     margin: 0 5px 0 5px;
 }
+
+.bitsy-collection .card-title {
+    font-size: larger;
+}
