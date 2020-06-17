@@ -6,6 +6,10 @@
     margin: 30px 0;
 }
 
+.about h4 {
+    margin-bottom: 30px;
+}
+
 .about img {
     float: left;
     margin: 0 15px 15px 0;
@@ -16,4 +20,21 @@
     border-radius: 5px;
 
     transform: scaleX(-1); /* FOR PLACEHOLDER ONLY */
+}
+
+.fixing-up {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.fixing-up h6 {
+    margin-bottom: 0;
+}
+
+.fixing-up p {    
+    margin-bottom: 0;
+}
+
+.play-info, .play-quotes {
+    margin-bottom: 15px;
 }
