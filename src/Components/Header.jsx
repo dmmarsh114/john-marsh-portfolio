@@ -8,12 +8,21 @@ const Header = () => {
     return (
         <div className='header'>
             <div className='header-text'>
-                <h1>Bitsy Stories</h1>
-                <h4>Subtitle Text</h4>
-                <ButtonGroup vertical>
+                {/* <h1>Bitsy Stories</h1>
+                <h4>Subtitle Text</h4> */}
+
+                <h4>Introducing 2 Delightful Collections of Hilarious Short Stories…</h4>
+                <br />
+                <h1><a href="#Bitsy1"><i>The Comic Misadventures of Bitsy</i></a></h1>
+                <h1><a href="#Bitsy2"><i>More Comic Misadventures of Bitsy</i></a></h1>
+                <br />
+                <br />
+                <h6><a href="#AboutTheAuthor">Read about author John Marsh and his other works</a></h6>
+
+                {/* <ButtonGroup vertical>
                     <a href="#BitsyStories"><Button color='info'>See the Stuff!</Button></a>
                     <a href="#AboutTheAuthor"><Button color='info'>Meet the Author!</Button></a>
-                </ButtonGroup>
+                </ButtonGroup> */}
             </div>
         </div>
     )

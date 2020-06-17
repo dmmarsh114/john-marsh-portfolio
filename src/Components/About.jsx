@@ -11,9 +11,15 @@ const About = (props) => {
         <div className='about' id='AboutTheAuthor'>
             <h2>About the Author</h2>
             <img src={authorPlaceholder} alt="author" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio eligendi in magni, vitae eum accusantium delectus ipsam tempora accusamus, tempore molestiae vero pariatur impedit numquam cumque saepe. A voluptas doloremque, quam obcaecati eaque laudantium nobis. Amet deleniti corrupti in saepe, blanditiis aliquid itaque animi tempora velit veniam iusto iste?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio eligendi in magni, vitae eum accusantium delectus ipsam tempora accusamus, tempore molestiae vero pariatur impedit numquam cumque saepe. A voluptas doloremque, quam obcaecati eaque laudantium nobis. Amet deleniti corrupti in saepe, blanditiis aliquid itaque animi tempora velit veniam iusto iste?</p>
-            <p><a href="">Click Here</a> to see John Marsh's other works.</p>
+            <p>“When you have the real-life Bitsy for inspiration, these stories practically write themselves,” says John Marsh of his 2 collections of humorous stories inspired by his delightfully quirky and spirited wife, Jenni. The couple are pictured here getting a 25th Anniversary biplane ride. Together they wrote the hilarious farce, Fixing Up, which won the 2014 McLaren Comedy Playwriting Competition.</p>
+            <p>John is also an award-winning teacher, author, performer. Colorful story-telling and ample amounts of humor are hallmarks of his popular history classes. He is the winner of numerous teaching honors, including the inaugural Robert P. Bell Creative Teaching Award.</p>
+            <p> John and Jenni live in Muncie, Indiana and have 3 children.</p>
+            <p style={{ marginBottom: '10px' }}><a href="">Click Here</a> to see John Marsh's other works, including:</p>
+            <ul style={{ paddingLeft: '30px' }}>
+                <li>His performances as the hapless Professor Dewey B. Leevum in the mockumentary series</li>
+                <li>A synopsis of  Fixing Up, a play he co-authored with Jenni, and information about licensing it for a production</li>
+                <li>Find information on booking John as a speaker on a range of entertaining and relevant topics such as colorful history tales, world religions, the founding of America, creativity and humor.</li>
+            </ul>
         </div>
     );
 }

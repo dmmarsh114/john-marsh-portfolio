@@ -6,6 +6,7 @@ const Footer = (props) => {
     return (
         <div className='footer'>
             <ol>
+                <li><a href="">Contact</a></li>
                 <li>Copyright John Marsh</li>
             </ol>
         </div>

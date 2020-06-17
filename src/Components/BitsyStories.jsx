@@ -45,7 +45,7 @@ const BitsyStories = () => {
                     </Col>
 
                     <Col md='6' className='book-info'>
-                        <div>
+                        <div id='Bitsy1'>
                             <h4>The Comic Misadventures of Bitsy</h4>
                             <p style={{ textAlign: 'center' }}>By John Marsh</p>
                             <p>Treat yourself to this collection of hilarious Bitsy short stories!</p>
@@ -72,7 +72,7 @@ const BitsyStories = () => {
             <Container>
                 <Row>
                     <Col md='6' className='book-info'>
-                        <div>
+                        <div id='Bitsy2'>
                             <h4>More Comic Misadventures of Bitsy</h4>
                             <p style={{ textAlign: 'center' }}>By John Marsh</p>
                             <p>Grab the second great collection of hilarious Bitsy short stories!</p>
