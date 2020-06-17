@@ -6,6 +6,8 @@ const AlsoBy = (props) => {
     return (
         <div className='also-by'>
 
+            <a href="/">Go back</a>
+
             <div className='fixing-up'>
                 <div className='play-info'>
                     <h5>Fixing Up</h5>
