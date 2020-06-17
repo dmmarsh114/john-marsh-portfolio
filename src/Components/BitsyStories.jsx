@@ -2,8 +2,7 @@ import React from 'react';
 import './css/bitsy.css';
 
 import {
-    Card, CardColumns, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button, Row, Col, Container,
+    Button, Row, Col, Container,
     Modal, ModalHeader, ModalBody, ModalFooter
 } from 'reactstrap';
 
@@ -30,35 +29,83 @@ const BitsyStories = () => {
 
     return (
         <div className='bitsyStories' id='BitsyStories'>
-            <h2>The Stories</h2>
+            {/* <h2>The Stories</h2> */}
 
-            {/* BOOK 1 ================================= */}
-            <div className="card-wrapper">
-                <h4>Book 1</h4>
-                <div className="card" id='book1'>
-                    <div className="card-front">
-                        <img src={collectionPic} style={{ width: '100%', height: '100%' }} />
-                    </div>
-                    <div className="card-back">
-                        <p>back content</p>
-                    </div>
-                </div>
-                <button onClick={() => flipCard('book1')}>click me</button>
-            </div>
+            <Container>
+                <Row>
+                    <Col md='7'>
+                        {/* BOOK 1 ================================= */}
+                        <div className="card-wrapper">
+                            <div className="card" id='book1'>
+                                <div className="card-front">
+                                    <img src={collectionPic} style={{ width: '100%', height: '100%' }} />
+                                </div>
+                                <div className="card-back">
+                                    <p>back content</p>
+                                </div>
+                            </div>
+                            <Button color='info' onClick={() => flipCard('book1')}>click me</Button>
+                        </div>
+                    </Col>
 
-            {/* BOOK 2 ================================= */}
-            <div className="card-wrapper">
-                <h4>Book 2</h4>
-                <div className="card" id='book2'>
-                    <div className="card-front">
-                        <img src={collectionPic} style={{ width: '100%', height: '100%' }} />
-                    </div>
-                    <div className="card-back">
-                        <p>back content</p>
-                    </div>
-                </div>
-                <button onClick={() => flipCard('book2')}>click me</button>
-            </div>
+                    <Col md='5' className='book-info'>
+                        <div>
+                            <h4>Book 1</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium odit, quae neque, accusantium assumenda blanditiis laboriosam error voluptatibus deleniti ad tenetur necessitatibus nihil, qui saepe. At enim itaque provident dicta?</p>
+                            <p>Included in this book are stories such as:</p>
+                            <ol>
+                                <li>Lorem ipsum dolor sit amet consectetur</li>
+                                <li>Lorem ipsum dolor sit amet consectetur</li>
+                                <li>Lorem ipsum dolor sit amet consectetur</li>
+                                <li>Lorem ipsum dolor sit amet consectetur</li>
+                                <li>Lorem ipsum dolor sit amet consectetur</li>
+                                <li>Lorem ipsum dolor sit amet consectetur</li>
+                            </ol>
+                            <p style={{ textAlign: 'right' }}>...and more!</p>
+                            <Button color='info'>Buy Here</Button>
+                            <Button color='info'>Read a Sample</Button>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+
+            <Container>
+                <Row>
+                    <Col md='5' className='book-info'>
+                        <div>
+                            <h4>Book 2</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium odit, quae neque, accusantium assumenda blanditiis laboriosam error voluptatibus deleniti ad tenetur necessitatibus nihil, qui saepe. At enim itaque provident dicta?</p>
+                            <p>Included in this book are stories such as:</p>
+                            <ol>
+                                <li>Lorem ipsum dolor sit amet consectetur</li>
+                                <li>Lorem ipsum dolor sit amet consectetur</li>
+                                <li>Lorem ipsum dolor sit amet consectetur</li>
+                                <li>Lorem ipsum dolor sit amet consectetur</li>
+                                <li>Lorem ipsum dolor sit amet consectetur</li>
+                                <li>Lorem ipsum dolor sit amet consectetur</li>
+                            </ol>
+                            <p style={{ textAlign: 'right' }}>...and more!</p>
+                            <Button color='info'>Buy Here</Button>
+                            <Button color='info'>Read a Sample</Button>
+                        </div>
+                    </Col>
+
+                    <Col md='7'>
+                        {/* BOOK 2 ================================= */}
+                        <div className="card-wrapper">
+                            <div className="card" id='book2'>
+                                <div className="card-front">
+                                    <img src={collectionPic} style={{ width: '100%', height: '100%' }} />
+                                </div>
+                                <div className="card-back">
+                                    <p>back content</p>
+                                </div>
+                            </div>
+                            <Button color='info' onClick={() => flipCard('book2')}>click me</Button>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
 
         </div >
     )
