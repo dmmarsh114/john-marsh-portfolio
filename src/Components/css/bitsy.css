@@ -24,7 +24,7 @@
 }
 
 .book-info ol {
-    list-style-type: none;
+    list-style-type: disc;
     padding-left: 20px;
 }
 

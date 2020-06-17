@@ -10,9 +10,6 @@ import collectionPic from '../Assets/collectionPlaceholder.jpg';
 
 const BitsyStories = () => {
 
-    const collection1Sample = 'Collection 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in eveniet itaque eaque tenetur ipsa enim similique vel, distinctio laborum architecto nam velit voluptate vero unde quas, blanditiis dignissimos neque!';
-    const collection2Sample = 'Collection 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in eveniet itaque eaque tenetur ipsa enim similique vel, distinctio laborum architecto nam velit voluptate vero unde quas, blanditiis dignissimos neque!';
-
     const [cardFlip, setCardFlip] = React.useState(false);
 
     const flipCard = (id) => {
@@ -29,11 +26,10 @@ const BitsyStories = () => {
 
     return (
         <div className='bitsyStories' id='BitsyStories'>
-            {/* <h2>The Stories</h2> */}
 
             <Container>
                 <Row>
-                    <Col md='7'>
+                    <Col md='6'>
                         {/* BOOK 1 ================================= */}
                         <div className="card-wrapper">
                             <div className="card" id='book1'>
@@ -48,20 +44,23 @@ const BitsyStories = () => {
                         </div>
                     </Col>
 
-                    <Col md='5' className='book-info'>
+                    <Col md='6' className='book-info'>
                         <div>
-                            <h4>Book 1</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium odit, quae neque, accusantium assumenda blanditiis laboriosam error voluptatibus deleniti ad tenetur necessitatibus nihil, qui saepe. At enim itaque provident dicta?</p>
-                            <p>Included in this book are stories such as:</p>
+                            <h4>The Comic Misadventures of Bitsy</h4>
+                            <p style={{ textAlign: 'center' }}>By John Marsh</p>
+                            <p>Treat yourself to this collection of hilarious Bitsy short stories!</p>
+                            <p>Includes 15 madcap tales of mirth such as:</p>
                             <ol>
-                                <li>Lorem ipsum dolor sit amet consectetur</li>
-                                <li>Lorem ipsum dolor sit amet consectetur</li>
-                                <li>Lorem ipsum dolor sit amet consectetur</li>
-                                <li>Lorem ipsum dolor sit amet consectetur</li>
-                                <li>Lorem ipsum dolor sit amet consectetur</li>
-                                <li>Lorem ipsum dolor sit amet consectetur</li>
+                                <li>Bitsy and the Disastrous 3-Honk System</li>
+                                <li>Bitsy and the Phantom Beaver</li>
+                                <li>Bitsy and the Hunchbacked Troll of Booger Holler</li>
+                                <li>Bitsy and the Alien Invasion</li>
+                                <li>Bitsy and the Message from the Great Beyond</li>
+                                <li>Bitsy and the Night of the Ribbing Bed</li>
+                                <li>Bitsy and the Great Bird Herd of Aught Five</li>
+                                <p style={{ margin: '15px auto 40px auto' }}>...and more!</p>
                             </ol>
-                            <p style={{ textAlign: 'right' }}>...and more!</p>
+                            <p><i>Now available on Amazon Kindle for $2.99</i></p>
                             <Button color='info'>Buy Here</Button>
                             <Button color='info'>Read a Sample</Button>
                         </div>
@@ -69,29 +68,32 @@ const BitsyStories = () => {
                 </Row>
             </Container>
 
+            {/* BOOK 2 ================================= */}
             <Container>
                 <Row>
-                    <Col md='5' className='book-info'>
+                    <Col md='6' className='book-info'>
                         <div>
-                            <h4>Book 2</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium odit, quae neque, accusantium assumenda blanditiis laboriosam error voluptatibus deleniti ad tenetur necessitatibus nihil, qui saepe. At enim itaque provident dicta?</p>
-                            <p>Included in this book are stories such as:</p>
+                            <h4>More Comic Misadventures of Bitsy</h4>
+                            <p style={{ textAlign: 'center' }}>By John Marsh</p>
+                            <p>Grab the second great collection of hilarious Bitsy short stories!</p>
+                            <p>Includes 15 more hilarious tales such as:</p>
                             <ol>
-                                <li>Lorem ipsum dolor sit amet consectetur</li>
-                                <li>Lorem ipsum dolor sit amet consectetur</li>
-                                <li>Lorem ipsum dolor sit amet consectetur</li>
-                                <li>Lorem ipsum dolor sit amet consectetur</li>
-                                <li>Lorem ipsum dolor sit amet consectetur</li>
-                                <li>Lorem ipsum dolor sit amet consectetur</li>
+                                <li>Bitsy and the Bowlegged Conductor on the Dreamland Express</li>
+                                <li>Bitsy and the Ghost of Christmas Yet to be Put Away</li>
+                                <li>Bitsy and the Treacherous Plot of the Notorious Traitor</li>
+                                <li>Bitsy and the Courageous Charge up Sand Pond Hill</li>
+                                <li>Bitsy and the Ongoing Search for My Bottom</li>
+                                <li>Bitsy and the Perilous Panty Popping Party</li>
+                                <li>Bitsy and the Behemoth Bra Save the Children’s Literacy Fund</li>
+                                <p style={{ margin: '15px auto 40px auto' }}>...and more!</p>
                             </ol>
-                            <p style={{ textAlign: 'right' }}>...and more!</p>
+                            <p><i>Now available on Amazon Kindle for $2.99</i></p>
                             <Button color='info'>Buy Here</Button>
                             <Button color='info'>Read a Sample</Button>
                         </div>
                     </Col>
 
-                    <Col md='7'>
-                        {/* BOOK 2 ================================= */}
+                    <Col md='6'>
                         <div className="card-wrapper">
                             <div className="card" id='book2'>
                                 <div className="card-front">
