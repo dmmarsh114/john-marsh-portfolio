@@ -17,16 +17,32 @@
     height: 100vh;
 }
 
-#titleTest {
-    opacity: 1;
+#titleCycle {
+    width: 100%;
+    overflow: hidden; /* hide the text before it is typed */
+    white-space: nowrap; /* prevents the hidden text from wrapping */
+
     /* the animation time has to match the interval time in BitsyStories.jsx */
-    animation: fade 4s linear; 
+    animation: typing 8s linear, blinking-cursor .8s linear;
     animation-iteration-count:infinite;
+
+    font-family: monospace;
+    letter-spacing: .15em;
+
+    border-right: .15em solid black; /* cursor */
 }
 
-@keyframes fade {
-  0%,100% { opacity: 0 }
-  50% { opacity: 1 }
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
+
+@keyframes typing {
+  0% {width: 0%; padding-right: 0}
+  25% {width: 100%; padding-right: 5px} /* padding puts some space between the cursor and the text */
+  50% {width: 100%; padding-right: 5px} /* pause once text is typed */
+  75% {width: 0%; padding-right: 0}
+  100% {width: 0%; padding-right: 0} /* pause after text is 'deleted' */
 }
 
 /* ==================== info styles ==================== */
