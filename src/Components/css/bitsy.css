@@ -17,6 +17,18 @@
     height: 100vh;
 }
 
+#titleTest {
+    opacity: 1;
+    /* the animation time has to match the interval time in BitsyStories.jsx */
+    animation: fade 4s linear; 
+    animation-iteration-count:infinite;
+}
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+
 /* ==================== info styles ==================== */
 
 .book-info {
