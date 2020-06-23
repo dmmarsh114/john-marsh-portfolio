@@ -11,10 +11,9 @@ const Header = () => {
                 {/* <h1>Bitsy Stories</h1>
                 <h4>Subtitle Text</h4> */}
 
-                <h4>Introducing 2 Delightful Collections of Hilarious Short Stories…</h4>
+                <h4>Introducing a Delightful Collection of Hilarious Short Stories…</h4>
                 <br />
-                <h1><a href="#Bitsy1"><i>The Comic Misadventures of Bitsy</i></a></h1>
-                <h1><a href="#Bitsy2"><i>More Comic Misadventures of Bitsy</i></a></h1>
+                <h1><a href="#bitsyBook"><i>The Comic Misadventures of Bitsy</i></a></h1>
                 <br />
                 <br />
                 <h6><a href="#AboutTheAuthor">Read about author John Marsh and his other works</a></h6>
