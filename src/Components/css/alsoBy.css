@@ -1,13 +1,27 @@
-.fixing-up {
+.also-by section {
+    margin: 20px;
     margin-bottom: 30px;
+}
+
+.also-by h2 {
     text-align: center;
 }
 
-.fixing-up h6 {
-    margin-bottom: 0;
+.fixing-up {
+
 }
 
-.fixing-up p {    
+.play-logo {
+    /* padding-right: 20%; */
+}
+
+.fixing-up img {
+    /* float: right; */
+    width: 200px;
+    height: auto;
+}
+
+.fixing-up h6, .fixing-up p {
     margin-bottom: 0;
 }
 
