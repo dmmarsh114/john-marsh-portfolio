@@ -1,5 +1,5 @@
 .footer {
-    height: 8vh;
+    height: 15vh;
     background-color: rgb(23,162,184);
 }
 
@@ -7,15 +7,24 @@
     width: 100%;
     
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
+    align-items: center;
     justify-content: space-evenly;
     
     margin-bottom: 0;
     padding-top: 2vh;
     
     list-style-type: none;
-    text-align: center;
+    text-align: left;
     color: white;
+
+    font-size: medium;
+}
+
+.footer li:last-child {
+    margin-top: 5px;
+    font-size: small;
+    font-style: italic;
 }
 
 .footer a {

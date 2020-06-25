@@ -10,6 +10,7 @@ import AlsoBy from './Components/AlsoBy';
 import Footer from './Components/Footer';
 
 function App() {
+
   return (
     <div>
       <Router>
