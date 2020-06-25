@@ -2,6 +2,7 @@ import React from 'react';
 import './css/about.css';
 
 import { Container, Row, Col, Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 import authorPlaceholder from '../Assets/authorPlaceholder.jpg';
 
@@ -20,6 +21,7 @@ const About = (props) => {
                 <li>A synopsis of  Fixing Up, a play he co-authored with Jenni, and information about licensing it for a production</li>
                 <li>Find information on booking John as a speaker on a range of entertaining and relevant topics such as colorful history tales, world religions, the founding of America, creativity and humor.</li>
             </ul>
+                    <p><a href="/alsoby">Click Here</a> to see John Marsh's other works.</p>
         </div>
     );
 }

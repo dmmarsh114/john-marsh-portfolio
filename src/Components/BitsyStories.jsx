@@ -10,6 +10,10 @@ import collectionPic from '../Assets/collectionPlaceholder.jpg';
 
 const BitsyStories = () => {
 
+    const amazonLink = 'https://smile.amazon.com/Comic-Misadventures-Bitsy-John-Marsh-ebook/dp/B08BK5HV6H/ref=sr_1_2?dchild=1&keywords=bitsy&qid=1592733716&s=digital-text&sr=1-2';
+
+    const collection1Sample = 'Collection 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in eveniet itaque eaque tenetur ipsa enim similique vel, distinctio laborum architecto nam velit voluptate vero unde quas, blanditiis dignissimos neque!';
+    const collection2Sample = 'Collection 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in eveniet itaque eaque tenetur ipsa enim similique vel, distinctio laborum architecto nam velit voluptate vero unde quas, blanditiis dignissimos neque!';
     const [cardFlip, setCardFlip] = React.useState(false);
 
     const flipCard = (id) => {
