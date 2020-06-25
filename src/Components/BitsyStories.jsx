@@ -56,11 +56,11 @@ const BitsyStories = () => {
     return (
         <div className='bitsyStories' id='BitsyStories'>
 
-            <Container id='bitsyBook'>
+            <Container>
                 <Row>
                     <Col md='6'>
                         {/* BOOK 1 ================================= */}
-                        <div className="card-wrapper">
+                        <div className="card-wrapper" id='bitsyBook'>
                             <div className="card" id='book1'>
                                 <div className="card-front">
                                     <img src={collectionPic} style={{ width: '100%', height: '100%' }} />
