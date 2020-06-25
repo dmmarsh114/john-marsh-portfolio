@@ -2,8 +2,7 @@ import React from 'react';
 import './css/bitsy.css';
 
 import {
-    Card, CardColumns, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button, Row, Col, Container,
+    Button, Row, Col, Container,
     Modal, ModalHeader, ModalBody, ModalFooter
 } from 'reactstrap';
 
@@ -15,81 +14,83 @@ const BitsyStories = () => {
 
     const collection1Sample = 'Collection 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in eveniet itaque eaque tenetur ipsa enim similique vel, distinctio laborum architecto nam velit voluptate vero unde quas, blanditiis dignissimos neque!';
     const collection2Sample = 'Collection 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in eveniet itaque eaque tenetur ipsa enim similique vel, distinctio laborum architecto nam velit voluptate vero unde quas, blanditiis dignissimos neque!';
+    const [cardFlip, setCardFlip] = React.useState(false);
 
-    const [sampleText, setSampleText] = React.useState('');
-    const [sampleModal, setSampleModal] = React.useState(false);
+    const flipCard = (id) => {
+        let card = document.getElementById(id);
 
-    const toggle = () => setSampleModal(!sampleModal);
-
-    const openSampleModal = (text) => {
-        setSampleText(text);
-        toggle();
+        if (cardFlip === false) {
+            card.style.transform = 'rotateY(-180deg)';
+            setCardFlip(true);
+        } else {
+            card.style.transform = 'initial';
+            setCardFlip(false);
+        }
     }
+
+    let titles = [
+        'Bitsy and the Disastrous 3-Honk System',
+        'Bitsy and the Phantom Beaver',
+        'Bitsy and the Hunchbacked Troll of Booger Holler',
+        'Bitsy and the Alien Invasion',
+        'Bitsy and the Message from the Great Beyond',
+        'Bitsy and the Night of the Ribbing Bed',
+        'Bitsy and the Great Bird Herd of Aught Five',
+        'Bitsy and the Bowlegged Conductor on the Dreamland Express',
+        'Bitsy and the Ghost of Christmas Yet to be Put Away',
+        'Bitsy and the Treacherous Plot of the Notorious Traitor',
+        'Bitsy and the Courageous Charge up Sand Pond Hill',
+        'Bitsy and the Ongoing Search for My Bottom',
+        'Bitsy and the Perilous Panty Popping Party',
+        'Bitsy and the Behemoth Bra Save the Children’s Literacy Fund'
+    ];
+
+    let i = 1;
+
+    setInterval(function () {
+        let p = document.getElementById('titleCycle');
+        p.innerHTML = titles[i++];
+        if (i == titles.length) i = 0;
+    }, 8000); // match the time here with the animation time in bitsy.css! 
 
     return (
         <div className='bitsyStories' id='BitsyStories'>
-            <h2>The Stories</h2>
 
-            <CardColumns className='bitsy-collections-container'>
+            <Container id='bitsyBook'>
+                <Row>
+                    <Col md='6'>
+                        {/* BOOK 1 ================================= */}
+                        <div className="card-wrapper">
+                            <div className="card" id='book1'>
+                                <div className="card-front">
+                                    <img src={collectionPic} style={{ width: '100%', height: '100%' }} />
+                                </div>
+                                <div className="card-back">
+                                    <p>back content</p>
+                                </div>
+                            </div>
+                            <Button color='info' onClick={() => flipCard('book1')}>{cardFlip ? 'see front' : 'see back'}</Button>
+                        </div>
+                    </Col>
 
-                <Card className='bitsy-collection collection-1 text-left'>
-                    <Row>
-                        <Col className='pic-container'>
-                            <CardImg className='collection-pic' src={collectionPic} alt='Collection1 Cover Art' />
-                        </Col>
-                        <Col>
-                            <CardBody>
-                                <CardTitle>Collection 1</CardTitle>
-                                <CardText>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore exercitationem aliquam sunt cum odit? Praesentium architecto tempore sed voluptates odio id provident laudantium. Nemo nam dicta saepe, iusto alias ea.
-                                </CardText>
-                                <CardText>
-                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, est." -- from <i>Bitsy and the Lorem Ipusm</i>
-                                </CardText>
-                                <CardText>
-                                    With stories such as: <i>Lorem ipsum dolor, sit amet</i>, <i>consectetur adipisicing elit</i>, <i>Commodi voluptatem</i>
-                                </CardText>
-                                <Button color='info' onClick={() => openSampleModal(collection1Sample)}>Read A Sample</Button>
-                                <Button color='info'>Buy Now!</Button>
-                            </CardBody>
-                        </Col>
-                    </Row>
-                </Card>
+                    <Col md='6' className='book-info'>
+                        <div>
+                            <h4>The Comic Misadventures of Bitsy</h4>
+                            <p style={{ textAlign: 'center' }}>By John Marsh</p>
+                            <p>Treat yourself to this collection of hilarious Bitsy short stories!</p>
+                            <p>Includes 30 madcap tales of mirth such as:</p>
+                            <div style={{ display: 'inline-block' }}>
+                                <p id='titleCycle'>{titles[0]}</p>
+                                <p style={{ margin: '15px auto 40px auto' }}>...and more!</p>
+                            </div>
+                            <p><i>Now available for print or Amazon Kindle for $2.99</i></p>
+                            <Button color='info'>Buy Here</Button>
+                            <Button color='info'>Read a Sample</Button>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
 
-                <Card className='bitsy-collection collection-2 text-right'>
-                    <Row>
-                        <Col>
-                            <CardBody>
-                                <CardTitle>Collection 2</CardTitle>
-                                <CardText>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore exercitationem aliquam sunt cum odit? Praesentium architecto tempore sed voluptates odio id provident laudantium. Nemo nam dicta saepe, iusto alias ea.
-                                </CardText>
-                                <CardText>
-                                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, est." -- from <i>Bitsy and the Something-or-Other</i>
-                                </CardText>
-                                <CardText>
-                                    With stories such as: <i>Lorem ipsum dolor, sit amet</i>, <i>consectetur adipisicing elit</i>, <i>Commodi voluptatem</i>
-                                </CardText>
-                                <Button color='info'>Buy Now!</Button>
-                                <Button color='info' onClick={() => openSampleModal(collection2Sample)}>Read A Sample</Button>
-                            </CardBody>
-                        </Col>
-                        <Col className='pic-container'>
-                            <CardImg className='collection-pic' src={collectionPic} alt='Collection2 Cover Art' />
-                        </Col>
-                    </Row>
-                </Card>
-
-            </CardColumns>
-
-            <Modal isOpen={sampleModal} toggle={toggle}>
-                <ModalHeader toggle={toggle}>Sample Modal</ModalHeader>
-                <ModalBody>{sampleText}</ModalBody>
-                <ModalFooter>
-                    <Button color='danger' onClick={toggle}>Close</Button>
-                    <Button color='info'>Buy Here!</Button>
-                </ModalFooter>
-            </Modal>
         </div >
     )
 }
