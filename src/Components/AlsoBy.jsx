@@ -1,11 +1,16 @@
 import React from 'react';
 import './css/alsoBy.css';
 
+import ContactModal from './ContactModal';
+
 import { Button, Container, Row, Col } from 'reactstrap';
 
 import fixingUpLogo from '../Assets/FixingUpLogo.png';
 
 const AlsoBy = (props) => {
+
+    const [contactModal, setContactModal] = React.useState(false);
+    const toggle = () => setContactModal(!contactModal);
 
     const dewey1 = 'https://vimeo.com/114310558';
     const dewey2 = 'https://vimeo.com/308838046/96b7f51494';
@@ -32,7 +37,7 @@ const AlsoBy = (props) => {
                                 <p>“A wonderfully funny romantic farce”</p>
                                 <p>“A charming and splendorous comic affair”</p>
                             </div>
-                            <p className='link'><a href="" target='blank'>Click Here</a> for a synopsis, excerpt and information on how to license this play.</p>
+                            <p><a className='info-button' href={undefined} onClick={toggle}>Click Here</a> for a synopsis, excerpt and information on how to license this play.</p>
                         </Col>
                         <Col>
                             <div className='play-logo'>
@@ -82,6 +87,7 @@ const AlsoBy = (props) => {
                 </Container>
             </section>
 
+            <ContactModal toggle={toggle} modal={contactModal} />
         </div>
     );
 }

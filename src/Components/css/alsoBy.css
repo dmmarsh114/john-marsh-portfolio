@@ -32,3 +32,12 @@
 .play-info, .play-quotes {
     margin-bottom: 15px;
 }
+
+.fixing-up .info-button {
+    color: #007bff;
+}
+
+.fixing-up .info-button:hover {
+    color: #0256af;
+    text-decoration: underline;
+}
