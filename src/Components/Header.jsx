@@ -13,10 +13,13 @@ const Header = () => {
 
                 <h4>Introducing a Delightful Collection of Hilarious Short Stories…</h4>
                 <br />
-                <h1><a href="#bitsyBook"><i>The Comic Misadventures of Bitsy</i></a></h1>
+                <h1><a ><i>The Comic Misadventures of Bitsy</i></a></h1>
                 <br />
                 <br />
-                <h6><a href="#AboutTheAuthor">Read about author John Marsh and his other works</a></h6>
+                <ButtonGroup vertical>
+                    <a href="#bitsyBook"><Button color='info'>Check it Out</Button></a>
+                    <a href="#AboutTheAuthor"><Button color='info'>Read About the Author</Button></a>
+                </ButtonGroup>
 
                 {/* <ButtonGroup vertical>
                     <a href="#BitsyStories"><Button color='info'>See the Stuff!</Button></a>
