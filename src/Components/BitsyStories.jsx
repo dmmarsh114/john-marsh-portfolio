@@ -84,8 +84,8 @@ const BitsyStories = () => {
                                 <p style={{ margin: '15px auto 40px auto' }}>...and more!</p>
                             </div>
                             <p><i>Now available for print or Amazon Kindle for $2.99</i></p>
-                            <Button color='info'>Buy Here</Button>
                             <Button color='info'>Read a Sample</Button>
+                            <a href={amazonLink}><Button color='info'>Buy Here</Button></a>
                         </div>
                     </Col>
                 </Row>
