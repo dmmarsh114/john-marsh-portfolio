@@ -6,6 +6,8 @@ import ContactModal from './ContactModal';
 import { Button, Container, Row, Col } from 'reactstrap';
 
 import fixingUpLogo from '../Assets/FixingUpLogo.png';
+import deweyImg from '../Assets/dewey.png';
+import francesDyke from '../Assets/Frances Dyke.jpg';
 
 const AlsoBy = (props) => {
 
@@ -58,6 +60,28 @@ const AlsoBy = (props) => {
                             <p><a href={dewey1} target='blank'>Space Aliens in Ancient Egypt – with Dewey B. Leevum</a></p>
                             <p><a href={dewey2} target='blank'>Dewey Does Time</a></p>
                         </Col>
+                        <Col>
+                            <div className='play-logo'>
+                                <img src={deweyImg} alt="dewey b leevum" />
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+
+            <section className='articles'>
+                <Container>
+                    <Row>
+                        <Col>
+                            <h5>Teaching During a Pandemic – a Century Ago</h5>
+                            <p>Here’s an article I wrote recently about teaching during a pandemic – a century ago. It is based on letters from my grandmother, who was a 21-year-old school teacher in 1918 during the Spanish Influenza pandemic. She has some very interesting things to say to us.</p>
+                            <p><a href="https://historynewsnetwork.org/article/175189" target='blank'>Read it here</a></p>
+                        </Col>
+                        <Col>
+                            <div className='play-logo'>
+                                <img src={francesDyke} alt="Frances Dyke" />
+                            </div>
+                        </Col>
                     </Row>
                 </Container>
             </section>
@@ -70,18 +94,6 @@ const AlsoBy = (props) => {
                             <p>Need an engaging and entertaining speaker for your event? John Marsh delivers lively talks on a variety of interesting topics for a wide range of audiences. His historical presentations fascinate audiences with their fresh stories and timely perspectives. Topics include subjects from American history from colonial times through today, as well as select topics in world history and world religions. He also presents history from biblical times for churches wishing to enrich their understanding with historical context. Marsh’s messages are ultimately positive looks at America and at human endeavors, and resonate extremely well with audiences where a love of freedom is present.</p>
                             <p><a href="">See a sample</a></p>
                             <p><a href="">Book him here</a></p>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-
-            <section className='articles'>
-                <Container>
-                    <Row>
-                        <Col>
-                            <h5>Grandma Article</h5>
-                            <p>Here’s an article I wrote recently about teaching during a pandemic – a century ago. It is based on letters from my grandmother, who was a 21-year-old school teacher in 1918 during the Spanish Influenza pandemic. She has some very interesting things to say to us.</p>
-                            <p><a href="https://historynewsnetwork.org/article/175189" target='blank'>Read it here</a></p>
                         </Col>
                     </Row>
                 </Container>
