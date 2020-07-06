@@ -114,20 +114,13 @@
     backface-visibility: hidden;
     border-radius: 15px;
     
-    background-color: #999999;
-    color: #fff;
-    text-align: center;
-    /* line-height: 200px; */
-    padding-top: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-
     /* positioning back face */
     -ms-transform: rotateY(-180deg); /* IE 9*/
     -webkit-transform: rotateY(-180deg); /* Safari */
     transform: rotateY(-180deg);
 }
 
-/* ==================== ignore this bit ==================== */
+/* ==================== unused hover effect, saved for reference ==================== */
 
 .bitsyStories .hcard:hover {
     -ms-transform: rotateY(-180deg); /* IE 9 */

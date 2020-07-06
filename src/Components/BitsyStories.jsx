@@ -6,14 +6,14 @@ import {
     Modal, ModalHeader, ModalBody, ModalFooter
 } from 'reactstrap';
 
-import collectionPic from '../Assets/collectionPlaceholder.jpg';
+import coverImg from '../Assets/Bitsy-Cover.jpg';
+import backImg from '../Assets/Bitsy-Back.jpg';
 
 const BitsyStories = () => {
 
     const amazonLink = 'https://smile.amazon.com/Comic-Misadventures-Bitsy-John-Marsh-ebook/dp/B08BK5HV6H/ref=sr_1_2?dchild=1&keywords=bitsy&qid=1592733716&s=digital-text&sr=1-2';
 
-    const collection1Sample = 'Collection 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in eveniet itaque eaque tenetur ipsa enim similique vel, distinctio laborum architecto nam velit voluptate vero unde quas, blanditiis dignissimos neque!';
-    const collection2Sample = 'Collection 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in eveniet itaque eaque tenetur ipsa enim similique vel, distinctio laborum architecto nam velit voluptate vero unde quas, blanditiis dignissimos neque!';
+    const sampleText = 'Collection 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in eveniet itaque eaque tenetur ipsa enim similique vel, distinctio laborum architecto nam velit voluptate vero unde quas, blanditiis dignissimos neque!';
     const [cardFlip, setCardFlip] = React.useState(false);
 
     const flipCard = (id) => {
@@ -50,7 +50,7 @@ const BitsyStories = () => {
     setInterval(function () {
         let p = document.getElementById('titleCycle');
         p.innerHTML = titles[i++];
-        if (i == titles.length) i = 0;
+        if (i === titles.length) i = 0;
     }, 8000); // match the time here with the animation time in bitsy.css! 
 
     return (
@@ -59,14 +59,13 @@ const BitsyStories = () => {
             <Container>
                 <Row>
                     <Col md='6'>
-                        {/* BOOK 1 ================================= */}
                         <div className="card-wrapper" id='bitsyBook'>
                             <div className="card" id='book1'>
                                 <div className="card-front">
-                                    <img src={collectionPic} style={{ width: '100%', height: '100%' }} />
+                                    <img src={coverImg} style={{ width: '100%', height: '100%' }} alt='front cover' />
                                 </div>
                                 <div className="card-back">
-                                    <p>back content</p>
+                                    <img src={backImg} style={{ width: '100%', height: '100%' }} alt='back cover' />
                                 </div>
                             </div>
                             <Button color='info' onClick={() => flipCard('book1')}>{cardFlip ? 'see front' : 'see back'}</Button>
