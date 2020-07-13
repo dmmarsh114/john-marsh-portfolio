@@ -8,10 +8,19 @@
     color: white;
 }
 
-.header-text {
-    position: absolute;
-    top: 100px;
-    left: 60%;
+.header .btn-group-vertical {
+    align-items: center;
+}
 
-    text-align: right;
+.header Button {
+    margin: 10px auto 10px auto;
+}
+
+.header-text {
+    padding-top: 10vh;
+    text-align: center;
+}
+
+.header-text a {
+    color: white;
 }

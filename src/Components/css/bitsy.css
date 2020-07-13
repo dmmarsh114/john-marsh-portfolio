@@ -1,6 +1,11 @@
 .bitsyStories {
-    height: 100%;
-    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 70px;
+    min-height: 100vh;
 }
 
 .bitsyStories h2 {
@@ -9,23 +14,130 @@
     text-align: center;
 }
 
-.bitsy-collections-container {
+/* ==================== title animation ==================== */
+
+#titleCycle {
+    width: 100%;
+    overflow: hidden; /* hide the text before it is typed */
+    /* prevents the hidden text from wrapping */
+    white-space: nowrap;
+
+    /* the animation time has to match the interval time in BitsyStories.jsx */
+    animation: typing 8s linear, blinking-cursor .8s linear;
+    animation-iteration-count:infinite;
+
+    /* font-family: monospace; */
+    /* font-size: .8em; */
+    /* letter-spacing: .15em; */
+
+    border-right: .15em solid black; /* cursor */
+}
+
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
+
+@keyframes typing {
+  0% {width: 0%; padding-right: 0}
+  25% {width: 100%; padding-right: 5px} /* padding puts some space between the cursor and the text */
+  50% {width: 100%; padding-right: 5px} /* pause once text is typed */
+  75% {width: 0%; padding-right: 0}
+  100% {width: 0%; padding-right: 0} /* pause after text is 'deleted' */
+}
+
+/* ==================== info styles ==================== */
+
+.book-info {
+    padding-top: 50px;
+}
+
+.book-info h4 {
+    text-align: center;
+}
+
+.book-info ol {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.book-info Button {
+    margin-right: 10px;
+}
+
+/* ==================== card styles ==================== */
+
+/* 
+    --desktop: 1200px;
+    --laptop: 1024px;
+    --tablet: 768px;
+    --phone: 480px;
+*/
+
+/* between desktop and laptop */
+@media only screen and (max-width: 1200px) and (min-width: 1024px) {
+    .card {
+        width: 500px;
+        height: 700px;
+    }
+}
+
+.bitsyStories .card-wrapper {
+    perspective: 800px;
+    margin: 50px 0 50px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    padding: 0 50px;
 }
 
-.bitsy-collection {
-    margin: 25px 50px;
-    padding: 0 30px 20px;
+.bitsyStories .card-wrapper Button {
+    margin-top: 10px;
 }
 
-.pic-container {
-    padding: 20px 0 0 0;
+.bitsyStories .card {
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 15px;
+
+    width: 300px;
+    height: 400px;
+
+    /* flip transition */
+    -webkit-transition: transform 1.5s; /* Safari and Chrome */
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
 }
 
-.bitsy-collection Button {
-    margin: 0 5px 0 5px;
+.bitsyStories .card-front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+}
+
+.bitsyStories img {
+    border-radius: inherit;
+}
+
+.bitsyStories .card-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    
+    /* positioning back face */
+    -ms-transform: rotateY(-180deg); /* IE 9*/
+    -webkit-transform: rotateY(-180deg); /* Safari */
+    transform: rotateY(-180deg);
+}
+
+/* ==================== unused hover effect, saved for reference ==================== */
+
+.bitsyStories .hcard:hover {
+    -ms-transform: rotateY(-180deg); /* IE 9 */
+    -webkit-transform: rotateY(-180deg); /* Safari and Chrome */
+    transform: rotateY(-180deg);
 }

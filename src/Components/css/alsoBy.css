@@ -1,0 +1,46 @@
+.also-by {
+    margin-top: 15px;
+}
+
+.also-by section {
+    margin: 20px;
+    margin-bottom: 30px;
+    background: rgb(252, 240, 218);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.also-by h2 {
+    text-align: center;
+}
+
+.fixing-up {
+
+}
+
+.play-logo {
+    /* padding-right: 20%; */
+}
+
+.also-by img {
+    /* float: right; */
+    width: 200px;
+    height: auto;
+}
+
+.fixing-up h6, .fixing-up p {
+    margin-bottom: 0;
+}
+
+.play-info, .play-quotes {
+    margin-bottom: 15px;
+}
+
+.fixing-up .info-button {
+    color: #007bff;
+}
+
+.fixing-up .info-button:hover {
+    color: #0256af;
+    text-decoration: underline;
+}
