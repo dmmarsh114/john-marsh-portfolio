@@ -1,9 +1,6 @@
 import React from 'react';
 import './css/about.css';
 
-import { Container, Row, Col, Button } from 'reactstrap';
-import { Link } from 'react-router-dom';
-
 import authorImg from '../Assets/authorAndBitsy.jpg';
 
 const About = (props) => {

@@ -11,7 +11,7 @@ import backImg from '../Assets/Bitsy-Back.jpg';
 
 const BitsyStories = () => {
 
-    const amazonLink = 'https://smile.amazon.com/Comic-Misadventures-Bitsy-John-Marsh-ebook/dp/B08BK5HV6H/ref=sr_1_2?dchild=1&keywords=bitsy&qid=1592733716&s=digital-text&sr=1-2';
+    const amazonLink = 'https://www.amazon.com/Comic-Misadventures-Bitsy-John-Marsh/dp/B08C97X2CG/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=';
 
     const sampleText = 'Collection 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in eveniet itaque eaque tenetur ipsa enim similique vel, distinctio laborum architecto nam velit voluptate vero unde quas, blanditiis dignissimos neque!';
     const [cardFlip, setCardFlip] = React.useState(false);
@@ -29,20 +29,19 @@ const BitsyStories = () => {
     }
 
     let titles = [
-        'Bitsy and the Disastrous 3-Honk System',
-        'Bitsy and the Phantom Beaver',
-        'Bitsy and the Hunchbacked Troll of Booger Holler',
-        'Bitsy and the Alien Invasion',
-        'Bitsy and the Message from the Great Beyond',
-        'Bitsy and the Night of the Ribbing Bed',
-        'Bitsy and the Great Bird Herd of Aught Five',
-        'Bitsy and the Bowlegged Conductor on the Dreamland Express',
-        'Bitsy and the Ghost of Christmas Yet to be Put Away',
-        'Bitsy and the Treacherous Plot of the Notorious Traitor',
-        'Bitsy and the Courageous Charge up Sand Pond Hill',
-        'Bitsy and the Ongoing Search for My Bottom',
-        'Bitsy and the Perilous Panty Popping Party',
-        'Bitsy and the Behemoth Bra Save the Children’s Literacy Fund'
+        'Disastrous 3-Honk System',
+        'Phantom Beaver',
+        'Hunchbacked Troll of Booger Holler',
+        'Alien Invasion',
+        'Message from the Great Beyond',
+        'Night of the Ribbing Bed',
+        'Great Bird Herd of Aught Five',
+        // 'Bowlegged Conductor on the Dreamland Express',
+        'Ghost of Christmas Yet to be Put Away',
+        'Treacherous Plot of the Notorious Traitor',
+        'Courageous Charge up Sand Pond Hill',
+        'Ongoing Search for My Bottom',
+        'Perilous Panty Popping Party'
     ];
 
     let i = 1;
@@ -58,6 +57,8 @@ const BitsyStories = () => {
 
             <Container>
                 <Row>
+                    {/* <div style={{ paddingTop: '56%', position: 'relative' }}> */}
+
                     <Col md='6'>
                         <div className="card-wrapper" id='bitsyBook'>
                             <div className="card" id='book1'>
@@ -71,13 +72,14 @@ const BitsyStories = () => {
                             <Button color='info' onClick={() => flipCard('book1')}>{cardFlip ? 'see front' : 'see back'}</Button>
                         </div>
                     </Col>
+                    {/* </div> */}
 
                     <Col md='6' className='book-info'>
                         <div>
                             <h4>The Comic Misadventures of Bitsy</h4>
                             <p style={{ textAlign: 'center' }}>By John Marsh</p>
-                            <p>Treat yourself to this collection of hilarious Bitsy short stories!</p>
-                            <p>Includes 30 madcap tales of mirth such as:</p>
+                            <p>Treat yourself to this collection of hilarious short stories!</p>
+                            <p>Includes 30 madcap tales of mirth, featuring Bitsy and the...</p>
                             <div style={{ display: 'inline-block' }}>
                                 <p id='titleCycle'>{titles[0]}</p>
                                 <p style={{ margin: '15px auto 40px auto' }}>...and more!</p>

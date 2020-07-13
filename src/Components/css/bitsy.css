@@ -5,6 +5,7 @@
     justify-content: center;
 
     padding-top: 70px;
+    min-height: 100vh;
 }
 
 .bitsyStories h2 {
@@ -18,14 +19,16 @@
 #titleCycle {
     width: 100%;
     overflow: hidden; /* hide the text before it is typed */
-    white-space: nowrap; /* prevents the hidden text from wrapping */
+    /* prevents the hidden text from wrapping */
+    white-space: nowrap;
 
     /* the animation time has to match the interval time in BitsyStories.jsx */
     animation: typing 8s linear, blinking-cursor .8s linear;
     animation-iteration-count:infinite;
 
-    font-family: monospace;
-    letter-spacing: .15em;
+    /* font-family: monospace; */
+    /* font-size: .8em; */
+    /* letter-spacing: .15em; */
 
     border-right: .15em solid black; /* cursor */
 }
@@ -65,15 +68,27 @@
 
 /* ==================== card styles ==================== */
 
+/* 
+    --desktop: 1200px;
+    --laptop: 1024px;
+    --tablet: 768px;
+    --phone: 480px;
+*/
+
+/* between desktop and laptop */
+@media only screen and (max-width: 1200px) and (min-width: 1024px) {
+    .card {
+        width: 500px;
+        height: 700px;
+    }
+}
+
 .bitsyStories .card-wrapper {
     perspective: 800px;
     margin: 50px 0 50px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    width: auto;
-    height: 500px;
 }
 
 .bitsyStories .card-wrapper Button {
@@ -82,12 +97,11 @@
 
 .bitsyStories .card {
     position: relative;
-    /* width: 320px;
-    height: 210px; */
-    width: 100%;
-    height: 90%;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     border-radius: 15px;
+
+    width: 300px;
+    height: 400px;
 
     /* flip transition */
     -webkit-transition: transform 1.5s; /* Safari and Chrome */
