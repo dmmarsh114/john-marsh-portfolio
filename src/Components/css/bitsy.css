@@ -37,6 +37,7 @@
     /* font-family: monospace; */
     /* font-size: .8em; */
     /* letter-spacing: .15em; */
+    font-style: italic;
 
     border-right: .15em solid black; /* cursor */
 }

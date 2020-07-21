@@ -59,7 +59,6 @@ const BitsyStories = () => {
 
                 <Container>
                     <Row>
-                        {/* <div style={{ paddingTop: '56%', position: 'relative' }}> */}
 
                         <Col md='6'>
                             <div className="card-wrapper" id='bitsyBook'>
@@ -74,14 +73,13 @@ const BitsyStories = () => {
                                 <Button color='info' onClick={() => flipCard('book1')}>{cardFlip ? 'see front' : 'see back'}</Button>
                             </div>
                         </Col>
-                        {/* </div> */}
 
                         <Col md='6' className='book-info'>
                             <div>
                                 <h4>The Comic Misadventures of Bitsy</h4>
                                 <p style={{ textAlign: 'center' }}>By John Marsh</p>
-                                <p>Treat yourself to this collection of hilarious short stories!</p>
-                                <p>Includes 30 madcap tales of mirth, featuring Bitsy and the...</p>
+                                <p>Treat yourself to this collection of hilarious short stories, which includes 30 madcap tales of mirth!</p>
+                                <p>Featuring Bitsy and the...</p>
                                 <div style={{ display: 'inline-block' }}>
                                     <p id='titleCycle'>{titles[0]}</p>
                                     <p style={{ margin: '15px auto 40px auto' }}>...and more!</p>
