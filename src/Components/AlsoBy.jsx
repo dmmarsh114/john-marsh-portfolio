@@ -7,7 +7,7 @@ import { Button, Container, Row, Col } from 'reactstrap';
 
 import fixingUpLogo from '../Assets/FixingUpLogo.png';
 import deweyImg from '../Assets/dewey.png';
-import francesDyke from '../Assets/Frances Dyke.jpg';
+import francesDyke from '../Assets/Frances Dyke.png';
 
 const AlsoBy = (props) => {
 
