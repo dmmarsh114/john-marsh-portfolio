@@ -23,9 +23,9 @@ const AlsoBy = (props) => {
             <a href="/" style={{ margin: '15px' }}><Button color='info'>Go back</Button></a>
 
             <h2>Also By John Marsh</h2>
-            <hr style={{ borderColor: 'rgb(23,162,184)', width: '70%', marginBottom: '50px' }} />
+            <hr style={{ borderColor: 'var(--cover-orange)', width: '70%', marginBottom: '50px' }} />
 
-            <section className='fixing-up'>
+            <section className='fixing-up product-card'>
                 <Container>
                     <Row>
                         <Col>
@@ -50,7 +50,7 @@ const AlsoBy = (props) => {
                 </Container>
             </section>
 
-            <section className='deweyBLeevum'>
+            <section className='deweyBLeevum product-card'>
                 <Container>
                     <Row>
                         <Col>
@@ -69,7 +69,7 @@ const AlsoBy = (props) => {
                 </Container>
             </section>
 
-            <section className='articles'>
+            <section className='articles product-card'>
                 <Container>
                     <Row>
                         <Col>
@@ -86,7 +86,7 @@ const AlsoBy = (props) => {
                 </Container>
             </section>
 
-            <section className='public-speaking'>
+            <section className='public-speaking product-card'>
                 <Container>
                     <Row>
                         <Col>
