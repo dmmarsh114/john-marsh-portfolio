@@ -3,15 +3,15 @@
 }
 
 .also-by section {
-    margin: 20px;
-    margin-bottom: 30px;
-    /* background: rgb(252, 240, 218); */
+    margin: 20px auto 30px auto;
     padding: 15px;
     border-radius: 15px;
 }
 
-.also-by h2 {
+.also-by h1 {
     text-align: center;
+    font-family: Hamster, cursive;
+    letter-spacing: .1rem;
 }
 
 .fixing-up {
@@ -36,8 +36,9 @@
     margin-bottom: 15px;
 }
 
-.fixing-up .info-button {
+.also-by .info-button {
     color: #007bff;
+    cursor: pointer;
 }
 
 .fixing-up .info-button:hover {

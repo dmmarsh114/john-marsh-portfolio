@@ -22,7 +22,7 @@ const AlsoBy = (props) => {
 
             <a href="/" style={{ margin: '15px' }}><Button color='info'>Go back</Button></a>
 
-            <h2>Also By John Marsh</h2>
+            <h1>Also By John Marsh</h1>
             <hr style={{ borderColor: 'var(--cover-orange)', width: '70%', marginBottom: '50px' }} />
 
             <section className='fixing-up product-card'>
@@ -39,7 +39,7 @@ const AlsoBy = (props) => {
                                 <p>“A wonderfully funny romantic farce”</p>
                                 <p>“A charming and splendorous comic affair”</p>
                             </div>
-                            <p><a className='info-button' href={undefined} onClick={toggle}>Click Here</a> for a synopsis, excerpt and information on how to license this play.</p>
+                            <span className='info-button' onClick={toggle}>Click Here</span><span> for a synopsis, excerpt and information on how to license this play.</span>
                         </Col>
                         <Col>
                             <div className='play-logo'>
@@ -92,12 +92,13 @@ const AlsoBy = (props) => {
                         <Col>
                             <h5>Public Speaking</h5>
                             <p>Need an engaging and entertaining speaker for your event? John Marsh delivers lively talks on a variety of interesting topics for a wide range of audiences. His historical presentations fascinate audiences with their fresh stories and timely perspectives. Topics include subjects from American history from colonial times through today, as well as select topics in world history and world religions. He also presents history from biblical times for churches wishing to enrich their understanding with historical context. Marsh’s messages are ultimately positive looks at America and at human endeavors, and resonate extremely well with audiences where a love of freedom is present.</p>
-                            <p><a href="">See a sample</a></p>
-                            <p><a href="">Book him here</a></p>
+                            <p className='info-button' onClick={toggle}>Book him here</p>
                         </Col>
                     </Row>
                 </Container>
             </section>
+
+            <a href="/" style={{ margin: '15px', marginBottom: '50px' }}><Button color='info'>Go back</Button></a>
 
             <ContactModal toggle={toggle} modal={contactModal} />
         </div>
