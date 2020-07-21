@@ -21,6 +21,14 @@
     text-align: center;
 }
 
+.header-text h1 {
+    font-family: Bebas Neue, cursive;
+}
+
+.header-text h4 {
+    font-family: Open Sans, sans-serif;
+}
+
 .header-text a {
     color: white;
 }
