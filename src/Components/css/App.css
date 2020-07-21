@@ -1,17 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-html {
-    scroll-behavior: smooth;
+@font-face {
+    font-family: Hamster;
+    src: url('../../Assets/Hamster.otf') format('opentype');
 }
 
 :root {
-    --cover-orange: rgb(233,92,30);
+    /* --cover-orange: rgb(233,92,30); */
+    --cover-orange: #ff6b2d;
+    --cover-black: #231f20;
+    --cover-gray: #414042;
+    --cover-blue: #026e95;
+    --cover-teal: #018b98;
     --cover-tan: rgb(238,217,172);
+
     --body-bg-color: rgb(250, 250, 250);
 
     font-family: 'Bebas Neue', cursive;
     font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {

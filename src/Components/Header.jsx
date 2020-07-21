@@ -1,30 +1,36 @@
 import React from 'react';
 import './css/header.css';
 
-import { Button, ButtonGroup } from 'reactstrap';
+import bitsyWagon from '../Assets/bitsy-wagon.png';
+import bitsyCameo from '../Assets/Bitsy-Cameo.png';
+
+import { Button, ButtonGroup, Container, Row, Col } from 'reactstrap';
+
+const amazonLink = 'https://www.amazon.com/Comic-Misadventures-Bitsy-John-Marsh/dp/B08C97X2CG/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=';
+
+// cached here for development, remove later pls
+// const headerPic = bitsyCameo;
+const headerPic = bitsyWagon;
 
 const Header = () => {
 
     return (
         <div className='header'>
             <div className='header-text'>
-                {/* <h1>Bitsy Stories</h1>
-                <h4>Subtitle Text</h4> */}
-
-                <h4>Introducing a Delightful Collection of Hilarious Short Stories…</h4>
+                <div className='card'>
+                    <h4 className='subtitle'>Introducing a Delightful Collection of Hilarious Short Stories…</h4>
+                    <br />
+                    <h1 className='title'><a href={amazonLink}>The Comic Misadventures of Bitsy</a></h1>
+                </div>
                 <br />
-                <h1><a ><i>The Comic Misadventures of Bitsy</i></a></h1>
                 <br />
-                <br />
-                <ButtonGroup vertical>
-                    <a href="#bitsyBook"><Button color='info'>Check it Out</Button></a>
-                    <a href="#AboutTheAuthor"><Button color='info'>Read About the Author</Button></a>
-                </ButtonGroup>
-
-                {/* <ButtonGroup vertical>
-                    <a href="#BitsyStories"><Button color='info'>See the Stuff!</Button></a>
-                    <a href="#AboutTheAuthor"><Button color='info'>Meet the Author!</Button></a>
-                </ButtonGroup> */}
+            </div>
+            <ButtonGroup vertical>
+                <a href="#bitsyBook"><Button size='lg' color='info'>Check it Out!</Button></a>
+                <a href="#AboutTheAuthor"><Button size='lg' color='info'>About the Author</Button></a>
+            </ButtonGroup>
+            <div style={{ width: '50%', float: 'right' }}>
+                <img src={headerPic} alt="Hero" />
             </div>
         </div>
     )
