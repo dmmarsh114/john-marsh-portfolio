@@ -5,11 +5,13 @@ html {
 :root {
     --cover-orange: rgb(233,92,30);
     --cover-tan: rgb(238,217,172);
+    --body-bg-color: rgb(250, 250, 250);
 }
 
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--body-bg-color);
 }
 
 #bootstrap-overrides .btn {

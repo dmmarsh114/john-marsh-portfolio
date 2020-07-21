@@ -55,43 +55,46 @@ const BitsyStories = () => {
     return (
         <div className='bitsyStories' id='BitsyStories'>
 
-            <Container>
-                <Row>
-                    {/* <div style={{ paddingTop: '56%', position: 'relative' }}> */}
+            <div className='product-card'>
 
-                    <Col md='6'>
-                        <div className="card-wrapper" id='bitsyBook'>
-                            <div className="card" id='book1'>
-                                <div className="card-front">
-                                    <img src={coverImg} style={{ width: '100%', height: '100%' }} alt='front cover' />
+                <Container>
+                    <Row>
+                        {/* <div style={{ paddingTop: '56%', position: 'relative' }}> */}
+
+                        <Col md='6'>
+                            <div className="card-wrapper" id='bitsyBook'>
+                                <div className="card" id='book1'>
+                                    <div className="card-front">
+                                        <img src={coverImg} style={{ width: '100%', height: '100%' }} alt='front cover' />
+                                    </div>
+                                    <div className="card-back">
+                                        <img src={backImg} style={{ width: '100%', height: '100%' }} alt='back cover' />
+                                    </div>
                                 </div>
-                                <div className="card-back">
-                                    <img src={backImg} style={{ width: '100%', height: '100%' }} alt='back cover' />
+                                <Button color='info' onClick={() => flipCard('book1')}>{cardFlip ? 'see front' : 'see back'}</Button>
+                            </div>
+                        </Col>
+                        {/* </div> */}
+
+                        <Col md='6' className='book-info'>
+                            <div>
+                                <h4>The Comic Misadventures of Bitsy</h4>
+                                <p style={{ textAlign: 'center' }}>By John Marsh</p>
+                                <p>Treat yourself to this collection of hilarious short stories!</p>
+                                <p>Includes 30 madcap tales of mirth, featuring Bitsy and the...</p>
+                                <div style={{ display: 'inline-block' }}>
+                                    <p id='titleCycle'>{titles[0]}</p>
+                                    <p style={{ margin: '15px auto 40px auto' }}>...and more!</p>
                                 </div>
+                                <p><i>Now available for print or Amazon Kindle for $2.99</i></p>
+                                <Button color='info'>Read a Sample</Button>
+                                <a href={amazonLink}><Button color='info'>Buy Here</Button></a>
                             </div>
-                            <Button color='info' onClick={() => flipCard('book1')}>{cardFlip ? 'see front' : 'see back'}</Button>
-                        </div>
-                    </Col>
-                    {/* </div> */}
+                        </Col>
+                    </Row>
+                </Container>
 
-                    <Col md='6' className='book-info'>
-                        <div>
-                            <h4>The Comic Misadventures of Bitsy</h4>
-                            <p style={{ textAlign: 'center' }}>By John Marsh</p>
-                            <p>Treat yourself to this collection of hilarious short stories!</p>
-                            <p>Includes 30 madcap tales of mirth, featuring Bitsy and the...</p>
-                            <div style={{ display: 'inline-block' }}>
-                                <p id='titleCycle'>{titles[0]}</p>
-                                <p style={{ margin: '15px auto 40px auto' }}>...and more!</p>
-                            </div>
-                            <p><i>Now available for print or Amazon Kindle for $2.99</i></p>
-                            <Button color='info'>Read a Sample</Button>
-                            <a href={amazonLink}><Button color='info'>Buy Here</Button></a>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
-
+            </div>
         </div >
     )
 }

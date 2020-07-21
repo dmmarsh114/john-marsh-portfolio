@@ -8,6 +8,14 @@
     min-height: 100vh;
 }
 
+.product-card {
+    width: 80%;
+    background-color: white;
+    margin-bottom: 70px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px 8px #888888;
+}
+
 .bitsyStories h2 {
     padding-top: 30px;
     margin: 0;
