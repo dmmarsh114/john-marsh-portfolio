@@ -11,3 +11,13 @@ body {
     margin: 0;
     padding: 0;
 }
+
+#bootstrap-overrides .btn {
+    box-shadow: none;
+    outline: none;
+}
+
+#bootstrap-overrides .btn-info {
+    background-color: var(--cover-orange);
+    border-color: var(--cover-orange);
+}
