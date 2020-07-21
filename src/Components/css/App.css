@@ -2,6 +2,11 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --cover-orange: rgb(233,92,30);
+    --cover-tan: rgb(238,217,172);
+}
+
 body {
     margin: 0;
     padding: 0;
