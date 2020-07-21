@@ -1,14 +1,15 @@
 .footer {
-    height: 15vh;
-    background-color: rgb(23,162,184);
+    height: 10vh;
+    background-color: var(--cover-orange);
+    color: white;
 }
 
 .footer ol {
     width: 100%;
     
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+    flex-flow: row wrap;
+    align-items: space-between;
     justify-content: space-evenly;
     
     margin-bottom: 0;
@@ -16,7 +17,6 @@
     
     list-style-type: none;
     text-align: left;
-    color: white;
 
     font-size: medium;
 }
@@ -31,10 +31,10 @@
     border: thin solid transparent;
     border-radius: 5px;
     background-color: transparent;
-    color: white;
+    color: inherit;
 }
 
 .footer button:hover {
-    border-color: black;
+    border-color: inherit;
     margin: 0;
 }
