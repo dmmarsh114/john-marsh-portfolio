@@ -13,6 +13,7 @@ const Footer = (props) => {
         <div className='footer'>
             <ol>
                 <li><button onClick={toggle}>Contact</button></li>
+                <li><button>Other Works</button></li>
                 <li>Copyright John Marsh</li>
             </ol>
 

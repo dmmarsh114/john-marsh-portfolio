@@ -15,7 +15,7 @@
     --cover-teal: #018b98;
     --cover-tan: rgb(238,217,172);
 
-    --body-bg-color: rgb(250, 250, 250);
+    --body-bg-color: #fff7f2;
 
     font-family: 'Bebas Neue', cursive;
     font-family: 'Open Sans', sans-serif;
@@ -28,7 +28,10 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--body-bg-color);
+}
+
+* {
+    font-family: Open Sans, sans-serif;
 }
 
 #bootstrap-overrides .btn {
@@ -39,4 +42,6 @@ body {
 #bootstrap-overrides .btn-info {
     background-color: var(--cover-orange);
     border-color: var(--cover-orange);
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
 }

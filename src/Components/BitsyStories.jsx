@@ -76,14 +76,14 @@ const BitsyStories = () => {
 
                         <Col md='6' className='book-info'>
                             <div>
-                                <h4>The Comic Misadventures of Bitsy</h4>
+                                <h4 style={{ fontFamily: 'Bebas Neue, cursive', letterSpacing: '.1rem', fontSize: '30px' }}>The Comic Misadventures of Bitsy</h4>
                                 <p style={{ textAlign: 'center' }}>By John Marsh</p>
                                 <p>Treat yourself to this collection of hilarious short stories, which includes 30 madcap tales of mirth!</p>
                                 <p>Featuring Bitsy and the...</p>
                                 <div style={{ display: 'inline-block' }}>
                                     <p id='titleCycle'>{titles[0]}</p>
-                                    <p style={{ margin: '15px auto 40px auto' }}>...and more!</p>
                                 </div>
+                                <p style={{ margin: '15px 30px 40px auto', textAlign: 'right' }}>...and more!</p>
                                 <p><i>Now available for print or Amazon Kindle for $2.99</i></p>
                                 <Button color='info'>Read a Sample</Button>
                                 <a href={amazonLink}><Button color='info'>Buy Here</Button></a>

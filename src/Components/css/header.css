@@ -46,7 +46,7 @@
 }
 
 .header-text .title {
-    font-family: Bebas Neue, cursive;    
+    font-family: Bebas Neue, cursive !important;    
     letter-spacing: .2rem;
 }
 
