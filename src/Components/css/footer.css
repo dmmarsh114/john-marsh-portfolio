@@ -2,29 +2,30 @@
     height: 10vh;
     background-color: var(--cover-orange);
     color: white;
+    position: relative;
+    bottom: 0;
 }
 
 .footer ol {
-    width: 100%;
-    
-    display: flex;
-    flex-flow: row wrap;
-    align-items: space-between;
-    justify-content: space-evenly;
+    width: 100%;    
     
     margin-bottom: 0;
-    padding-top: 2vh;
     
     list-style-type: none;
-    text-align: left;
-
-    font-size: medium;
+    text-align: center;
+    font-size: small;
 }
 
-.footer li:last-child {
-    margin-top: 5px;
-    font-size: small;
-    font-style: italic;
+/* if device width is greater than 768 px */
+@media only screen and (min-width: 768px) {
+    .footer ol {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: space-between;
+        justify-content: space-evenly;
+        padding-top: 2vh;
+        font-size: medium;
+    }
 }
 
 .footer button:hover {

@@ -14,7 +14,7 @@ const Footer = (props) => {
             <ol>
                 <li><button onClick={toggle}>Contact</button></li>
                 <li><button>Other Works</button></li>
-                <li>Copyright John Marsh</li>
+                <li><button>&#169; John Marsh 2020</button></li>
             </ol>
 
             <ContactModal toggle={toggle} modal={contactModal} />
