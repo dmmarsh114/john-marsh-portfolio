@@ -12,7 +12,7 @@ import Footer from './Components/Footer';
 function App() {
 
   return (
-    <div id='bootstrap-overrides' style={{ backgroundColor: 'var(--body-bg-color)' }}>
+    <div id='bootstrap-overrides'>
       <Router>
         <Route exact path='/'>
           <Header />
