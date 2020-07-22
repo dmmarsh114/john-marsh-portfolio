@@ -63,12 +63,17 @@
     margin-bottom: 15px;
 }
 
-.also-by .info-button {
+.info-button {
     color: #007bff;
     cursor: pointer;
+    font-weight: 600;
 }
 
-.fixing-up .info-button:hover {
+.info-button:hover {
     color: #0256af;
     text-decoration: underline;
+}
+
+.also-by a {
+    font-weight: 600;
 }
