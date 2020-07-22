@@ -44,7 +44,7 @@
     .header .btn-group-vertical {
         align-items: flex-start;
         margin-top: 50px;
-        margin-left: 120px;
+        padding-left: 120px;
     }
 }
 
