@@ -33,6 +33,12 @@
     color: var(--cover-orange);
 }
 
+/* remove hover fx for copyright */
+#copyrightBtn:hover {
+    background-color: transparent;
+    color: white;
+}
+
 .footer button {
     color: white;
     background-color: transparent;
