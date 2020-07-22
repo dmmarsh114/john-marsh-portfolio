@@ -13,7 +13,6 @@ const BitsyStories = () => {
 
     const amazonLink = 'https://www.amazon.com/Comic-Misadventures-Bitsy-John-Marsh/dp/B08C97X2CG/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=';
 
-    const sampleText = 'Collection 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in eveniet itaque eaque tenetur ipsa enim similique vel, distinctio laborum architecto nam velit voluptate vero unde quas, blanditiis dignissimos neque!';
     const [cardFlip, setCardFlip] = React.useState(false);
 
     const flipCard = (id) => {
@@ -84,8 +83,7 @@ const BitsyStories = () => {
                                     <p id='titleCycle'>{titles[0]}</p>
                                 </div>
                                 <p style={{ margin: '15px 30px 40px auto', textAlign: 'right' }}>...and more!</p>
-                                <p><i>Now available for print or Amazon Kindle for $2.99</i></p>
-                                <Button color='info'>Read a Sample</Button>
+                                <p><i>Now available on Amazon, in paperback for $9.99 or Kindle for $2.99</i></p>
                                 <a href={amazonLink}><Button color='info'>Buy Here</Button></a>
                             </div>
                         </Col>

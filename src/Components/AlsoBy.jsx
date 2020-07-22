@@ -46,17 +46,15 @@ const AlsoBy = (props) => {
 
                 <h2>Dewey Shorts</h2>
                 <p>Professor Dewey B. Leevum (played by John Marsh) tries to make a name for himself, with some decidedly unorthodox views, in these short, funny mockumentaries. Where would you like to see Dewey go next?</p>
-                <p>Filmed and edited by <a href="https://vimeo.com/user32093438" target='blank'>Terry Marsh</a></p>
                 <p><a href={dewey1} target='blank'>Space Aliens in Ancient Egypt – with Dewey B. Leevum</a></p>
                 <p><a href={dewey2} target='blank'>Dewey Does Time</a></p>
             </section >
 
             <section className='articles alsoby-card'>
                 <img src={francesDyke} alt="Frances Dyke" />
-                {/* <span style={{ clear: 'right' }}></span> */}
 
                 <h2>Teaching During a Pandemic – a Century Ago</h2>
-                <p>Here’s an article I wrote recently about teaching during a pandemic – a century ago. It is based on letters from my grandmother, who was a 21-year-old school teacher in 1918 during the Spanish Influenza pandemic. She has some very interesting things to say to us.</p>
+                <p>Here’s an article John Marsh wrote recently about teaching during a pandemic – a century ago. It is based on letters from his grandmother, who was a 21-year-old school teacher in 1918 during the Spanish Influenza pandemic. She has some very interesting things to say to us.</p>
                 <p><a href="https://historynewsnetwork.org/article/175189" target='blank'>Read it here</a></p>
             </section>
 
@@ -66,7 +64,7 @@ const AlsoBy = (props) => {
                 <p className='info-button' onClick={toggle}>Book him here</p>
             </section>
 
-            <a href="/" style={{ margin: '15px', marginBottom: '50px' }}><Button color='info'>Go back</Button></a>
+            <a href="/" style={{ margin: '15px' }}><Button color='info'>Go back</Button></a>
 
             <ContactModal toggle={toggle} modal={contactModal} />
         </div >
