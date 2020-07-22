@@ -1,40 +1,48 @@
 .footer {
-    height: 15vh;
-    background-color: rgb(23,162,184);
+    height: 10vh;
+    background-color: var(--cover-orange);
+    color: white;
+    position: relative;
+    bottom: 0;
 }
 
 .footer ol {
-    width: 100%;
-    
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: space-evenly;
+    width: 100%;    
     
     margin-bottom: 0;
-    padding-top: 2vh;
     
     list-style-type: none;
-    text-align: left;
-    color: white;
-
-    font-size: medium;
-}
-
-.footer li:last-child {
-    margin-top: 5px;
+    text-align: center;
     font-size: small;
-    font-style: italic;
 }
 
-.footer button {
-    border: thin solid transparent;
-    border-radius: 5px;
+/* if device width is greater than 768 px */
+@media only screen and (min-width: 768px) {
+    .footer ol {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: space-between;
+        justify-content: space-evenly;
+        padding-top: 2vh;
+        font-size: medium;
+    }
+}
+
+.footer button:hover {
+    background-color: white;
+    color: var(--cover-orange);
+}
+
+/* remove hover fx for copyright */
+#copyrightBtn:hover {
     background-color: transparent;
     color: white;
 }
 
-.footer button:hover {
-    border-color: black;
+.footer button {
+    color: white;
+    background-color: transparent;
+    border: thin solid white;
+    border-radius: 5px;
     margin: 0;
 }

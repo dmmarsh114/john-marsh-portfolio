@@ -8,6 +8,29 @@
     min-height: 100vh;
 }
 
+.product-card {
+    margin-bottom: 100px;
+    padding: 40px;
+}
+
+/* 
+    --desktop: 1200px;
+    --laptop: 1024px;
+    --tablet: 768px;
+    --phone: 480px;
+*/
+
+/* if devive is bigger than */
+@media only screen and (min-width: 768px) {
+    .product-card {
+        width: 80%;
+        background-color: var(--body-bg-color);
+        margin-bottom: 70px;
+        border-radius: 15px;
+        box-shadow: 0px 10px 10px 8px #888888;
+    }
+}
+
 .bitsyStories h2 {
     padding-top: 30px;
     margin: 0;
@@ -29,6 +52,7 @@
     /* font-family: monospace; */
     /* font-size: .8em; */
     /* letter-spacing: .15em; */
+    font-style: italic;
 
     border-right: .15em solid black; /* cursor */
 }
@@ -101,7 +125,7 @@
     border-radius: 15px;
 
     width: 300px;
-    height: 400px;
+    height: 450px;
 
     /* flip transition */
     -webkit-transition: transform 1.5s; /* Safari and Chrome */

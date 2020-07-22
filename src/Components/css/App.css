@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+@font-face {
+    font-family: Hamster;
+    src: url('../../Assets/Hamster.otf') format('opentype');
+}
+
+:root {
+    /* --cover-orange: rgb(233,92,30); */
+    --cover-orange: #ff6b2d;
+    --cover-black: #231f20;
+    --cover-gray: #414042;
+    --cover-blue: #026e95;
+    --cover-teal: #018b98;
+    --cover-tan: rgb(238,217,172);
+
+    --body-bg-color: #fff7f2;
+
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -5,4 +28,26 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--body-bg-color) !important;
+}
+
+* {
+    font-family: Open Sans, sans-serif;
+}
+
+#bootstrap-overrides .btn {
+    box-shadow: none;
+    outline: none;
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
+}
+
+#bootstrap-overrides .btn-info {
+    background-color: var(--cover-orange);
+    border-color: var(--cover-orange);
+}
+
+#bootstrap-overrides .btn-success {
+    background-color: var(--cover-blue);
+    border-color: var(--cover-blue);
 }

@@ -3,29 +3,57 @@
 }
 
 .also-by section {
-    margin: 20px;
-    margin-bottom: 30px;
-    background: rgb(252, 240, 218);
-    padding: 15px;
+    margin: 20px auto 60px auto;
+    padding: 30px;
     border-radius: 15px;
+    overflow: hidden;
 }
 
-.also-by h2 {
+.alsoby-card {
+    width: 100%;
+    background-color: var(--body-bg-color);
+    margin-bottom: 70px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px 8px #888888;
+}
+
+.also-by section h2 {
+    font-family: Bebas Neue, cursive;
+    letter-spacing: .1rem;
+}
+
+.also-by h1 {
+    margin-top: 30px;
     text-align: center;
-}
-
-.fixing-up {
-
-}
-
-.play-logo {
-    /* padding-right: 20%; */
+    font-family: Hamster, cursive;
+    letter-spacing: .1rem;
+    font-size: 55px;
 }
 
 .also-by img {
-    /* float: right; */
-    width: 200px;
-    height: auto;
+    width: 0;
+    height: 0;
+}
+
+#deweyImg {
+    width: 250px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+/* if devive is bigger than */
+@media only screen and (min-width: 768px) {
+    .also-by img {
+        float: right;
+
+        margin-left: 15px;
+        width: 200px;
+        height: auto;
+    }
+
+    .alsoby-card {
+        width: 80%;
+    }
 }
 
 .fixing-up h6, .fixing-up p {
@@ -36,11 +64,17 @@
     margin-bottom: 15px;
 }
 
-.fixing-up .info-button {
+.info-button {
     color: #007bff;
+    cursor: pointer;
+    font-weight: 600;
 }
 
-.fixing-up .info-button:hover {
+.info-button:hover {
     color: #0256af;
     text-decoration: underline;
+}
+
+.also-by a {
+    font-weight: 600;
 }

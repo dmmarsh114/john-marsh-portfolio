@@ -1,30 +1,30 @@
 import React from 'react';
 import './css/header.css';
 
-import { Button, ButtonGroup } from 'reactstrap';
+import bitsyWagon from '../Assets/bitsy-wagon.png';
+
+import { Button, ButtonGroup, Container, Row, Col } from 'reactstrap';
 
 const Header = () => {
 
     return (
         <div className='header'>
             <div className='header-text'>
-                {/* <h1>Bitsy Stories</h1>
-                <h4>Subtitle Text</h4> */}
-
-                <h4>Introducing a Delightful Collection of Hilarious Short Stories…</h4>
+                <div className='titleCard'>
+                    <h4 className='subtitle'>Introducing a Delightful Collection of Hilarious Short Stories…</h4>
+                    <br />
+                    <h1 className='title'>The Comic Misadventures of Bitsy</h1>
+                    <h6 className='subtitle' style={{ textAlign: 'left' }}>By John Marsh</h6>
+                </div>
                 <br />
-                <h1><a ><i>The Comic Misadventures of Bitsy</i></a></h1>
                 <br />
-                <br />
-                <ButtonGroup vertical>
-                    <a href="#bitsyBook"><Button color='info'>Check it Out</Button></a>
-                    <a href="#AboutTheAuthor"><Button color='info'>Read About the Author</Button></a>
-                </ButtonGroup>
-
-                {/* <ButtonGroup vertical>
-                    <a href="#BitsyStories"><Button color='info'>See the Stuff!</Button></a>
-                    <a href="#AboutTheAuthor"><Button color='info'>Meet the Author!</Button></a>
-                </ButtonGroup> */}
+            </div>
+            <ButtonGroup vertical>
+                <a href="#bitsyBook"><Button size='lg' color='info'>Check it Out!</Button></a>
+                <a href="#AboutTheAuthor"><Button size='lg' color='info'>About the Author</Button></a>
+            </ButtonGroup>
+            <div style={{ width: '50%', float: 'right' }}>
+                <img src={bitsyWagon} alt="Hero" />
             </div>
         </div>
     )

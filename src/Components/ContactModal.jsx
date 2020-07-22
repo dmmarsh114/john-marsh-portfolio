@@ -9,42 +9,28 @@ import {
 
 const ContactModal = (props) => {
 
-    const [subject, setSubject] = React.useState('');
-
     return (
-        <Modal isOpen={props.modal} toggle={props.toggle} className='contactModal'>
-            <ModalHeader toggle={props.toggle}>Contact Me</ModalHeader>
+        <Modal isOpen={props.modal} toggle={props.toggle} className='contactModal' id='bootstrap-overrides'>
+            <ModalHeader toggle={props.toggle}>{props.header}</ModalHeader>
             <Form action='https://formspree.io/jsmarsh555@gmail.com' method='POST'>
                 <ModalBody>
                     <FormGroup>
-                        <Label for='name'>Full Name</Label>
+                        <Label for='name'>Full Name <i>(required)</i></Label>
                         <Input id='name' name='name' required />
                     </FormGroup>
                     <FormGroup>
-                        <Label for='email'>Email</Label>
+                        <Label for='email'>Email <i>(required)</i></Label>
                         <Input id='email' name='_replyto' required />
                     </FormGroup>
                     <FormGroup>
-                        <Label for='subject'>Subject</Label>
-                        {
-                            subject === 'Other' ?
-                                <InputGroup>
-                                    <InputGroupAddon type='prepend'><Button outline='secondary' onClick={() => setSubject('')}>Back</Button></InputGroupAddon>
-                                    <Input id='subject' placeholder='Subject' required />
-                                </InputGroup>
-                                :
-                                <Input type='select' id='subject' required onChange={e => setSubject(e.target.value)}>
-                                    <option disabled selected>Select One</option>
-                                    <option>Fan Mail</option>
-                                    <option>Licensing</option>
-                                    <option>Other</option>
-                                </Input>
-                        }
-                        <input type='hidden' name='_subject' value={'Contact Form Submission: ' + subject}></input>
+                        <Label for='phone'>Phone Number <i>(optional)</i></Label>
+                        <Input id='phone' name='_phone' />
                     </FormGroup>
+                    {/* SUBJECT */}
+                    <input type='hidden' name='_subject' value={'Contact Form Submission: ' + props.subject}></input>
                     <FormGroup>
-                        <Label for='message'>Message</Label>
-                        <Input type='textarea' id='message' name='message' />
+                        <Label for='message'>Message <i>(required)</i></Label>
+                        <Input type='textarea' id='message' name='message' required />
                     </FormGroup>
                 </ModalBody>
                 <ModalFooter>
