@@ -38,11 +38,16 @@ body {
 #bootstrap-overrides .btn {
     box-shadow: none;
     outline: none;
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
 }
 
 #bootstrap-overrides .btn-info {
     background-color: var(--cover-orange);
     border-color: var(--cover-orange);
-    font-family: Open Sans, sans-serif;
-    font-weight: 600;
+}
+
+#bootstrap-overrides .btn-success {
+    background-color: var(--cover-blue);
+    border-color: var(--cover-blue);
 }

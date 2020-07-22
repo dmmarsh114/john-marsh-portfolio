@@ -68,7 +68,7 @@ const AlsoBy = (props) => {
 
             <a href="/" style={{ margin: '15px' }}><Button color='info'>Go back</Button></a>
 
-            <ContactModal toggle={toggle} modal={contactModal} />
+            <ContactModal toggle={toggle} modal={contactModal} header='Booking' subject='Public Speaking' />
         </div >
     );
 }

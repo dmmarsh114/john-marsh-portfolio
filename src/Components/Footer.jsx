@@ -17,7 +17,7 @@ const Footer = (props) => {
                 <li><button id='copyrightBtn'>&#169; John Marsh 2020</button></li>
             </ol>
 
-            <ContactModal toggle={toggle} modal={contactModal} />
+            <ContactModal toggle={toggle} modal={contactModal} header='Contact Me!' subject='Someone Wrote You a Message!' />
         </div>
     );
 }
