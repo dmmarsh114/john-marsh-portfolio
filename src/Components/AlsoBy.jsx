@@ -5,6 +5,8 @@ import ContactModal from './ContactModal';
 
 import { Button } from 'reactstrap';
 
+import fixingUpPdf from '../Assets/FIXING UP.pdf';
+
 import fixingUpLogo from '../Assets/FixingUpLogo.png';
 import deweyImg from '../Assets/dewey.png';
 import francesDyke from '../Assets/Frances Dyke.png';
@@ -38,7 +40,7 @@ const AlsoBy = (props) => {
                     <p>“A wonderfully funny romantic farce”</p>
                     <p>“A charming and splendorous comic affair”</p>
                 </div>
-                <span className='info-button' onClick={toggle}>Click Here</span><span> for a synopsis, excerpt and information on how to license this play.</span>
+                <a href={fixingUpPdf} download='Fixing Up'>Click Here</a><span> for a synopsis, excerpt and information on how to license this play.</span>
             </section>
 
             <section className='deweyBLeevum alsoby-card'>
