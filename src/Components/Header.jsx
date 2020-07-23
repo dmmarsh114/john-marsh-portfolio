@@ -14,7 +14,7 @@ const Header = () => {
                     <h4 className='subtitle'>Introducing a Delightful Collection of Hilarious Short Stories…</h4>
                     <br />
                     <h1 className='title'>The Comic Misadventures of Bitsy</h1>
-                    <h6 className='subtitle' style={{ textAlign: 'left' }}>By John Marsh</h6>
+                    <h6 className='subtitle'>By John Marsh</h6>
                 </div>
                 <br />
                 <br />
