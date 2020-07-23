@@ -22,7 +22,7 @@ function App() {
           <Footer />
         </Route>
 
-        <Route exact path='/alsoby'>
+        <Route exact path='/other-works'>
           <AlsoBy />
         </Route>
       </Router>
