@@ -42,16 +42,12 @@
 #titleCycle {
     width: 100%;
     overflow: hidden; /* hide the text before it is typed */
-    /* prevents the hidden text from wrapping */
-    white-space: nowrap;
+    white-space: nowrap; /* prevents the hidden text from wrapping */
 
     /* the animation time has to match the interval time in BitsyStories.jsx */
     animation: typing 8s linear, blinking-cursor .8s linear;
     animation-iteration-count:infinite;
 
-    /* font-family: monospace; */
-    /* font-size: .8em; */
-    /* letter-spacing: .15em; */
     font-style: italic;
 
     border-right: .15em solid black; /* cursor */
@@ -160,8 +156,9 @@
 
 /* ==================== unused hover effect, saved for reference ==================== */
 
-.bitsyStories .hcard:hover {
-    -ms-transform: rotateY(-180deg); /* IE 9 */
-    -webkit-transform: rotateY(-180deg); /* Safari and Chrome */
+/* .bitsyStories .hcard:hover {
+    -ms-transform: rotateY(-180deg); 
+    -webkit-transform: rotateY(-180deg); 
     transform: rotateY(-180deg);
-}
+} 
+*/

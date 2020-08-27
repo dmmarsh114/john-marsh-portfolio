@@ -31,11 +31,11 @@
         bottom: 10px;
         right: 225px;
     }
-
+    
     .header .titleCard {
         padding: 30px 0 20px 120px;
         border: none;
-    
+        
         margin: 0;
         width: 100%;
         height: auto;
@@ -46,6 +46,37 @@
         align-items: flex-start;
         margin-top: 50px;
         padding-left: 120px;
+    }
+}
+
+/* if device width is greater than 1200 and height is greater than 890 */
+@media only screen and (min-width: 1200px) and (min-height: 740px) {    
+    .header .titleCard {
+        height: 100%;
+        padding-top: 100px;
+        padding-left: 220px;
+    }
+
+    .header .header-text {
+        height: 40%;
+    }
+
+    .header .title {
+        font-size: 60px;
+    }
+
+    .header .subtitle {
+        font-size: 35px;
+    }
+
+    .header .btn-group-vertical {
+        margin-left: 100px;
+    }
+
+    .header Button {
+        height: 70px;
+        width: auto;
+        font-size: xx-large;
     }
 }
 
