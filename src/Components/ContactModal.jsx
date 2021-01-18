@@ -12,7 +12,7 @@ const ContactModal = (props) => {
     return (
         <Modal isOpen={props.modal} toggle={props.toggle} className='contactModal' id='bootstrap-overrides'>
             <ModalHeader toggle={props.toggle}>{props.header}</ModalHeader>
-            <Form action='https://formspree.io/jsmarsh555@gmail.com' method='POST'>
+            <Form action='https://formspree.io/f/xdopbkog' method='POST'>
                 <ModalBody>
                     <FormGroup>
                         <Label for='name'>Full Name <i>(required)</i></Label>
